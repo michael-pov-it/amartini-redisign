@@ -1,9 +1,16 @@
 import { Link } from "@/navigation";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export function Footer() {
     const t = useTranslations('Footer');
     const currentYear = new Date().getFullYear();
+    const logo = {
+        src: "/images/amartini_logo.png",
+        alt: "Amartini logo",
+        width: 140,
+        height: 40
+    };
 
     return (
         <footer className="border-t bg-muted/40">
@@ -57,6 +64,15 @@ export function Footer() {
                     <p className="text-xs text-muted-foreground">
                         {t('rights', { year: currentYear })}
                     </p>
+                    <Link href="/" className="flex items-center justify-end">
+                        <Image
+                            src={logo.src}
+                            alt={logo.alt}
+                            width={logo.width}
+                            height={logo.height}
+                            className="h-10 w-auto object-contain"
+                        />
+                    </Link>
                 </div>
             </div>
         </footer>

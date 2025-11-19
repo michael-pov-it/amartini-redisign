@@ -2,6 +2,13 @@ import { Link } from "@/navigation";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./language-switcher";
+import Image from "next/image";
+
+// Define config object with image property
+const config = {
+    image: "/images/amartini_logo.png",
+    alt: "Amartini logo",
+};
 
 export function Header() {
     const t = useTranslations('Header');
@@ -11,9 +18,14 @@ export function Header() {
             <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 md:px-8">
                 <div className="flex items-center gap-2">
                     <Link href="/" className="flex items-center space-x-2">
-                        <span className="font-heading text-xl font-bold text-primary">
-                            Amartini<span className="text-secondary">.eu</span>
-                        </span>
+                        <Image
+                            src={config.image}
+                            alt={config.alt}
+                            width={140}
+                            height={40}
+                            priority
+                            className="h-10 w-auto object-contain transition-transform duration-500 hover:scale-105"
+                        />
                     </Link>
                 </div>
 
