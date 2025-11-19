@@ -4,6 +4,9 @@ import "../globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { cn } from "@/lib/utils";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -13,20 +16,21 @@ export const metadata: Metadata = {
   description: "Comprehensive services in human resources development, residence permits, and labor mediation in the EU.",
 };
 
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
+type RootLayoutProps = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
+const isSupportedLocale = (locale: string): locale is 'en' | 'sk' =>
+  locale === 'en' || locale === 'sk';
 
 export default async function RootLayout({
   children,
   params
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
+}: RootLayoutProps) {
   const { locale } = await params;
-  // Ensure that the incoming `locale` is valid
-  if (!['en', 'sk'].includes(locale as any)) {
+
+  if (!isSupportedLocale(locale)) {
     notFound();
   }
 

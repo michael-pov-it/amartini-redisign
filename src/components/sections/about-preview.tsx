@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Link } from "@/navigation";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";

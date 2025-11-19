@@ -1,7 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
