@@ -1,65 +1,78 @@
+# syntax=docker/dockerfile:1
+
+# ----- Base Stage -----
 FROM node:22-alpine AS base
 
-# Install dependencies only when needed
+# Install security updates and required dependencies
+RUN apk upgrade --no-cache && \
+  apk add --no-cache libc6-compat && \
+  rm -rf /var/cache/apk/*
+
+WORKDIR /app
+
+# ----- Dependencies Stage -----
 FROM base AS deps
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
-RUN apk add --no-cache libc6-compat
-WORKDIR /app
 
-# Install dependencies based on the preferred package manager
-COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
-RUN \
-  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-  elif [ -f package-lock.json ]; then npm ci; \
-  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm i --frozen-lockfile; \
-  else echo "Lockfile not found." && exit 1; fi
+# Copy only package files for better layer caching
+COPY package.json package-lock.json ./
 
+# Install all dependencies (needed for build)
+RUN npm ci
 
-# Rebuild the source code only when needed
+# ----- Builder Stage -----
 FROM base AS builder
+
 WORKDIR /app
+
+# Copy dependencies from deps stage
 COPY --from=deps /app/node_modules ./node_modules
+
+# Copy source code (respecting .dockerignore)
 COPY . .
 
-# Next.js collects completely anonymous telemetry data about general usage.
-# Learn more here: https://nextjs.org/telemetry
-# Uncomment the following line in case you want to disable telemetry during the build.
-# ENV NEXT_TELEMETRY_DISABLED=1
+# Build arguments for build-time configuration
+ARG NEXT_PUBLIC_APP_URL
+ARG NEXT_TELEMETRY_DISABLED=1
 
-RUN \
-  if [ -f yarn.lock ]; then yarn run build; \
-  elif [ -f package-lock.json ]; then npm run build; \
-  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
-  else echo "Lockfile not found." && exit 1; fi
+# Set build environment variables
+ENV NEXT_TELEMETRY_DISABLED=${NEXT_TELEMETRY_DISABLED} \
+  NODE_ENV=production
 
-# Production image, copy all the files and run next
+# Build the application
+RUN npm run build
+
+# ----- Runner Stage (Production) -----
 FROM base AS runner
+
 WORKDIR /app
 
-ENV NODE_ENV=production
-# Uncomment the following line in case you want to disable telemetry during runtime.
-# ENV NEXT_TELEMETRY_DISABLED=1
+# Production environment variables
+ENV NODE_ENV=production \
+  NEXT_TELEMETRY_DISABLED=1 \
+  PORT=3000 \
+  HOSTNAME="0.0.0.0"
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+# Create non-root user with specific UID/GID for security
+RUN addgroup --system --gid 1001 nodejs && \
+  adduser --system --uid 1001 nextjs && \
+  mkdir .next && \
+  chown nextjs:nodejs .next
 
-COPY --from=builder /app/public ./public
-
-# Set the correct permission for prerender cache
-RUN mkdir .next
-RUN chown nextjs:nodejs .next
-
-# Automatically leverage output traces to reduce image size
-# https://nextjs.org/docs/advanced-features/output-file-tracing
+# Copy built application from builder
+# Next.js standalone output includes only needed dependencies
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+# Switch to non-root user
 USER nextjs
 
+# Expose port (documentation only, doesn't actually publish)
 EXPOSE 3000
 
-ENV PORT=3000
+# Health check for container orchestration
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+  CMD node -e "require('http').get('http://localhost:3000/api/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})" || exit 1
 
-# server.js is created by next build from the standalone output
-# https://nextjs.org/docs/pages/api-reference/next-config-js/output
+# Use exec form for proper signal handling
 CMD ["node", "server.js"]

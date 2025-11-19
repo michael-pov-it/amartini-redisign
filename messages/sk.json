@@ -1,0 +1,194 @@
+{
+    "Header": {
+        "home": "Domov",
+        "services": "Služby",
+        "about": "O nás",
+        "contact": "Kontakt",
+        "getStarted": "Začať spoluprácu"
+    },
+    "Hero": {
+        "badge": "Profesionálne HR a právne služby",
+        "title": "Zjednodušujeme pobytové a pracovné riešenia",
+        "description": "Poskytujeme komplexné služby v oblasti rozvoja ľudských zdrojov, povolení na pobyt a sprostredkovania práce pre štátnych príslušníkov tretích krajín v EÚ.",
+        "cta": "Dohodnúť konzultáciu",
+        "explore": "Preskúmať služby"
+    },
+    "Services": {
+        "title": "Naša expertíza",
+        "subtitle": "Ponúkame širokú škálu profesionálnych služieb navrhnutých na zefektívnenie vašich obchodných operácií a imigračných procesov.",
+        "residencePermits": {
+            "title": "Povolenia na pobyt",
+            "description": "Kompletná administratíva pre prechodný a trvalý pobyt na Slovensku pre občanov mimo EÚ.",
+            "details": {
+                "0": "Prechodný pobyt na účel zamestnania",
+                "1": "Žiadosti o Modrú kartu",
+                "2": "Zlúčenie rodiny",
+                "3": "Žiadosti o trvalý pobyt",
+                "4": "Obnova povolení na pobyt"
+            }
+        },
+        "laborMediation": {
+            "title": "Sprostredkovanie práce",
+            "description": "Prepojenie spoločností s kvalifikovanou pracovnou silou z tretích krajín na obsadenie voľných pozícií.",
+            "details": {
+                "0": "Nábor kvalifikovaného personálu",
+                "1": "Vízová podpora a dokumentácia",
+                "2": "Asistencia pri integrácii",
+                "3": "Test trhu práce",
+                "4": "Komunikácia s úradmi práce"
+            }
+        },
+        "hrDevelopment": {
+            "title": "Rozvoj HR",
+            "description": "Komplexné stratégie pre ľudské zdroje, školenia a optimalizáciu pracovnej sily.",
+            "details": {
+                "0": "Optimalizácia HR procesov",
+                "1": "Školenie a rozvoj zamestnancov",
+                "2": "Systémy riadenia výkonnosti",
+                "3": "Poradenstvo v organizačnej štruktúre",
+                "4": "Plánovanie odmeňovania a benefitov"
+            }
+        },
+        "legalConsulting": {
+            "title": "Právne poradenstvo",
+            "description": "Odborné poradenstvo v oblasti imigračného práva, zákonníka práce a zamestnaneckých predpisov.",
+            "details": {
+                "0": "Kontrola pracovných zmlúv",
+                "1": "Súlad so slovenským zákonníkom práce",
+                "2": "Zastupovanie pred úradmi",
+                "3": "Právne audity HR procesov",
+                "4": "Podpora pri riešení sporov"
+            }
+        },
+        "relocationServices": {
+            "title": "Relokačné služby",
+            "description": "Plná podpora pre zamestnancov sťahujúcich sa na Slovensko, vrátane ubytovania a integrácie.",
+            "details": {
+                "0": "Asistencia pri hľadaní ubytovania",
+                "1": "Registrácia do škôl a škôlok",
+                "2": "Otvorenie bankového účtu",
+                "3": "Registrácia zdravotného poistenia",
+                "4": "Kultúrna orientácia"
+            }
+        },
+        "corporateServices": {
+            "title": "Firemné služby",
+            "description": "Riešenia na mieru pre podniky rozširujúce svoju pracovnú silu o medzinárodné talenty.",
+            "details": {
+                "0": "Asistencia pri zakladaní spoločnosti",
+                "1": "Konzultácie ohľadom kancelárskych priestorov",
+                "2": "Analýza miestneho trhu",
+                "3": "Súlad s predpismi",
+                "4": "Obchodný networking"
+            }
+        },
+        "learnMore": "Viac informácií",
+        "viewAll": "Zobraziť všetky služby"
+    },
+    "About": {
+        "badge": "O Amartini",
+        "title": "Váš spoľahlivý partner pre pracovnú silu a imigráciu",
+        "description": "Odbremeníme spoločnosti od hľadania zamestnancov a vybavovania zložitej imigračnej administratívy. Naším poslaním je prinášať ekonomický úžitok Slovenskej republike integráciou kvalifikovaných medzinárodných talentov.",
+        "points": {
+            "0": "Komplexná administratíva pre povolenia na pobyt",
+            "1": "Profesionálne sprostredkovanie pracovnej sily",
+            "2": "Garantovaná spoľahlivosť a právny súlad",
+            "3": "Individuálny prístup ku každému klientovi"
+        },
+        "moreAbout": "Viac o nás",
+        "yearsExperience": "Roky skúseností",
+        "trustedPartner": "Dôveryhodný partner"
+    },
+    "CTA": {
+        "title": "Pripravení zefektívniť vaše HR procesy?",
+        "subtitle": "Sme tu, aby sme odpovedali na vaše otázky a poskytli potrebnú podporu.",
+        "contact": "Kontaktujte nás",
+        "viewServices": "Zobraziť služby",
+        "getInTouch": "Napíšte nám",
+        "description": "Či už ste zamestnávateľ hľadajúci personál alebo jednotlivec hľadajúci pomoc s pobytom, náš tím je pripravený pomôcť.",
+        "visitUs": "Navštívte nás",
+        "emailUs": "Napíšte nám email",
+        "callUs": "Zavolajte nám",
+        "openingHours": "Otváracie hodiny",
+        "days": "Pondelok - Piatok: 9:00 - 17:00",
+        "closed": "Sobota - Nedeľa: Zatvorené",
+        "sendMessage": "Pošlite nám správu",
+        "form": {
+            "firstName": "Meno",
+            "lastName": "Priezvisko",
+            "email": "Email",
+            "subject": "Predmet",
+            "message": "Správa",
+            "submit": "Odoslať správu",
+            "selectTopic": "Vyberte tému...",
+            "topics": {
+                "residence": "Povolenie na pobyt",
+                "labor": "Sprostredkovanie práce",
+                "hr": "HR poradenstvo",
+                "other": "Iné"
+            }
+        }
+    },
+    "AboutPage": {
+        "title": "O Amartini",
+        "subtitle": "Váš dôveryhodný partner pri zvládaní zložitosti medzinárodnej administratívy práce a pobytu.",
+        "whoWeAre": "Kto sme",
+        "description1": "Amartini je popredná poradenská agentúra so sídlom na Slovensku, špecializujúca sa na administratívu povolení na pobyt a sprostredkovanie pracovnej sily z tretích krajín.",
+        "description2": "Založení s víziou zjednodušenia byrokratických prekážok, ktorým čelia zamestnávatelia aj medzinárodní pracovníci, sme sa etablovali ako spoľahlivý partner pre podniky v rôznych sektoroch.",
+        "description3": "Náš tím tvoria skúsení odborníci v oblasti práva, ľudských zdrojov a imigračnej politiky, odhodlaní poskytovať komplexné služby, ktoré prinášajú ekonomický úžitok Slovenskej republike a zároveň odbremeňujú spoločnosti od administratívnej záťaže.",
+        "mission": "Naše poslanie",
+        "missionText": "Uľahčiť bezproblémovú integráciu medzinárodných talentov na slovenský trh práce, podporovať hospodársky rast a kultúrnu výmenu.",
+        "vision": "Naša vízia",
+        "visionText": "Byť vedúcou agentúrou v strednej Európe pre komplexné imigračné a HR riešenia, známou pre integritu a excelentnosť.",
+        "values": "Naše hodnoty",
+        "valuesList": {
+            "0": "Profesionalita",
+            "1": "Transparentnosť",
+            "2": "Spoľahlivosť",
+            "3": "Prístup orientovaný na klienta"
+        },
+        "stats": {
+            "permits": "Spracovaných povolení",
+            "clients": "Firemných klientov",
+            "experience": "Rokov skúseností",
+            "commitment": "Oddanosť"
+        }
+    },
+    "ContactPage": {
+        "title": "Kontaktujte nás",
+        "subtitle": "Spojte sa s naším tímom. Sme tu, aby sme pomohli so všetkými vašimi HR a pobytovými potrebami.",
+        "getInTouch": "Napíšte nám",
+        "description": "Či už ste zamestnávateľ hľadajúci personál alebo jednotlivec hľadajúci pomoc s pobytom, náš tím je pripravený pomôcť.",
+        "visitUs": "Navštívte nás",
+        "emailUs": "Napíšte nám email",
+        "callUs": "Zavolajte nám",
+        "openingHours": "Otváracie hodiny",
+        "days": "Pondelok - Piatok: 9:00 - 17:00",
+        "closed": "Sobota - Nedeľa: Zatvorené",
+        "sendMessage": "Pošlite nám správu",
+        "form": {
+            "firstName": "Meno",
+            "lastName": "Priezvisko",
+            "email": "Email",
+            "subject": "Predmet",
+            "message": "Správa",
+            "submit": "Odoslať správu",
+            "selectTopic": "Vyberte tému...",
+            "topics": {
+                "residence": "Povolenie na pobyt",
+                "labor": "Sprostredkovanie práce",
+                "hr": "HR poradenstvo",
+                "other": "Iné"
+            }
+        }
+    },
+    "Footer": {
+        "description": "Zjednodušujeme pobytové a pracovné riešenia pre firmy a jednotlivcov.",
+        "services": "Služby",
+        "company": "Spoločnosť",
+        "about": "O nás",
+        "contact": "Kontakt",
+        "privacyPolicy": "Ochrana osobných údajov",
+        "rights": "© {year} Amartini. Všetky práva vyhradené."
+    }
+}

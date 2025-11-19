@@ -1,0 +1,194 @@
+{
+    "Header": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About Us",
+        "contact": "Contact",
+        "getStarted": "Get Started"
+    },
+    "Hero": {
+        "badge": "Professional HR & Legal Services",
+        "title": "Simplifying Residence & Labor Solutions",
+        "description": "We provide comprehensive services in human resources development, residence permits, and labor mediation for third-country nationals in the EU.",
+        "cta": "Get a Consultation",
+        "explore": "Explore Services"
+    },
+    "Services": {
+        "title": "Our Expertise",
+        "subtitle": "We offer a wide range of professional services designed to streamline your business operations and immigration processes.",
+        "residencePermits": {
+            "title": "Residence Permits",
+            "description": "Complete administration for temporary and permanent residence in Slovakia for non-EU nationals.",
+            "details": {
+                "0": "Temporary residence for employment",
+                "1": "Blue Card applications",
+                "2": "Family reunification",
+                "3": "Permanent residence applications",
+                "4": "Renewal of residence permits"
+            }
+        },
+        "laborMediation": {
+            "title": "Labor Mediation",
+            "description": "Connecting companies with qualified labor force from third countries to fill vacant positions.",
+            "details": {
+                "0": "Recruitment of qualified personnel",
+                "1": "Visa support and documentation",
+                "2": "Integration assistance",
+                "3": "Labor market testing",
+                "4": "Communication with labor offices"
+            }
+        },
+        "hrDevelopment": {
+            "title": "HR Development",
+            "description": "Comprehensive strategies for human resources, training, and workforce optimization.",
+            "details": {
+                "0": "HR process optimization",
+                "1": "Employee training and development",
+                "2": "Performance management systems",
+                "3": "Organizational structure consulting",
+                "4": "Compensation and benefits planning"
+            }
+        },
+        "legalConsulting": {
+            "title": "Legal Consulting",
+            "description": "Expert advice on immigration law, labor codes, and employment regulations.",
+            "details": {
+                "0": "Employment contracts review",
+                "1": "Compliance with Slovak labor laws",
+                "2": "Representation before authorities",
+                "3": "Legal audits of HR processes",
+                "4": "Dispute resolution support"
+            }
+        },
+        "relocationServices": {
+            "title": "Relocation Services",
+            "description": "Full support for employees moving to Slovakia, including housing and integration.",
+            "details": {
+                "0": "Housing search assistance",
+                "1": "School and kindergarten registration",
+                "2": "Bank account opening",
+                "3": "Health insurance registration",
+                "4": "Cultural orientation"
+            }
+        },
+        "corporateServices": {
+            "title": "Corporate Services",
+            "description": "Tailored solutions for businesses expanding their workforce with international talent.",
+            "details": {
+                "0": "Company formation assistance",
+                "1": "Office space consultation",
+                "2": "Local market analysis",
+                "3": "Regulatory compliance",
+                "4": "Business networking"
+            }
+        },
+        "learnMore": "Learn more",
+        "viewAll": "View All Services"
+    },
+    "About": {
+        "badge": "About Amartini",
+        "title": "Your Reliable Partner for Workforce & Immigration",
+        "description": "We relieve companies from the burden of searching for employees and handling complex immigration paperwork. Our mission is to provide economic benefit to the Slovak Republic by integrating qualified international talent.",
+        "points": {
+            "0": "Comprehensive administration for residence permits",
+            "1": "Professional mediation of labor force",
+            "2": "Guaranteed reliability and legal compliance",
+            "3": "Individual approach to every client"
+        },
+        "moreAbout": "More About Us",
+        "yearsExperience": "Years of Experience",
+        "trustedPartner": "Trusted Partner"
+    },
+    "CTA": {
+        "title": "Ready to Streamline Your HR Processes?",
+        "subtitle": "We are here to answer your questions and provide the support you need.",
+        "contact": "Contact Us",
+        "viewServices": "View Services",
+        "getInTouch": "Get in Touch",
+        "description": "Whether you are an employer looking for staff or an individual seeking residence assistance, our team is ready to help.",
+        "visitUs": "Visit Us",
+        "emailUs": "Email Us",
+        "callUs": "Call Us",
+        "openingHours": "Opening Hours",
+        "days": "Monday - Friday: 9:00 AM - 5:00 PM",
+        "closed": "Saturday - Sunday: Closed",
+        "sendMessage": "Send us a Message",
+        "form": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "submit": "Send Message",
+            "selectTopic": "Select a topic...",
+            "topics": {
+                "residence": "Residence Permit",
+                "labor": "Labor Mediation",
+                "hr": "HR Consulting",
+                "other": "Other"
+            }
+        }
+    },
+    "AboutPage": {
+        "title": "About Amartini",
+        "subtitle": "Your trusted partner in navigating the complexities of international labor and residence administration.",
+        "whoWeAre": "Who We Are",
+        "description1": "Amartini is a premier consulting agency based in Slovakia, specializing in the administration of residence permits and the mediation of labor force from third countries.",
+        "description2": "Founded with the vision of simplifying the bureaucratic hurdles faced by both employers and international workers, we have established ourselves as a reliable partner for businesses across various sectors.",
+        "description3": "Our team consists of experienced professionals in law, human resources, and immigration policy, dedicated to providing comprehensive services that bring economic benefit to the Slovak Republic while relieving companies of administrative burdens.",
+        "mission": "Our Mission",
+        "missionText": "To facilitate the seamless integration of international talent into the Slovak labor market, fostering economic growth and cultural exchange.",
+        "vision": "Our Vision",
+        "visionText": "To be the leading agency in Central Europe for comprehensive immigration and HR solutions, known for integrity and excellence.",
+        "values": "Our Values",
+        "valuesList": {
+            "0": "Professionalism",
+            "1": "Transparency",
+            "2": "Reliability",
+            "3": "Client-centric approach"
+        },
+        "stats": {
+            "permits": "Permits Processed",
+            "clients": "Corporate Clients",
+            "experience": "Years Experience",
+            "commitment": "Commitment"
+        }
+    },
+    "ContactPage": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch with our team. We're here to help with all your HR and residence needs.",
+        "getInTouch": "Get in Touch",
+        "description": "Whether you are an employer looking for staff or an individual seeking residence assistance, our team is ready to help.",
+        "visitUs": "Visit Us",
+        "emailUs": "Email Us",
+        "callUs": "Call Us",
+        "openingHours": "Opening Hours",
+        "days": "Monday - Friday: 9:00 AM - 5:00 PM",
+        "closed": "Saturday - Sunday: Closed",
+        "sendMessage": "Send us a Message",
+        "form": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "submit": "Send Message",
+            "selectTopic": "Select a topic...",
+            "topics": {
+                "residence": "Residence Permit",
+                "labor": "Labor Mediation",
+                "hr": "HR Consulting",
+                "other": "Other"
+            }
+        }
+    },
+    "Footer": {
+        "description": "Simplifying residence and labor solutions for businesses and individuals.",
+        "services": "Services",
+        "company": "Company",
+        "about": "About Us",
+        "contact": "Contact",
+        "privacyPolicy": "Privacy Policy",
+        "rights": "© {year} Amartini. All rights reserved."
+    }
+}

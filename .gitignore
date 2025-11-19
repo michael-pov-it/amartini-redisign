@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.*
+pnpm-lock.yaml
+bun.lockb
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -16,13 +18,20 @@
 # next.js
 /.next/
 /out/
+/.turbo
 
 # production
 /build
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
 
 # debug
 npm-debug.log*
